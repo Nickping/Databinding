@@ -25,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
                 R.layout.support_simple_spinner_dropdown_item,
                 new ArrayList<String>()));
 
+        binding.spinnerProducts.setAdapter(new ArrayAdapter<String>(
+                this,
+                R.layout.support_simple_spinner_dropdown_item,
+                new ArrayList<String>()
+        ));
+
+        mainViewModel.attachViews(binding);
+
 
 
     }

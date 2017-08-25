@@ -36,6 +36,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:entries="@{mainviewmodel.mCompanies}"></Spinner>
+        <Spinner
+            android:layout_below="@id/spinner_companies"
+            android:visibility="@{mainviewmodel.mSpinnerProductsVisiblity}"
+            android:entries="@{mainviewmodel.mProducts}"
+            android:id="@+id/spinner_products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+        <ProgressBar
+            android:layout_below="@id/spinner_products"
+            android:visibility="@{mainviewmodel.mProgressBarStatusForProducts}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </RelativeLayout>
 
 </layout>
