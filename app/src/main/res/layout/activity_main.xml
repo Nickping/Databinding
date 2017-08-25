@@ -29,12 +29,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/txtview_top" />
-
-        <ProgressBar
-            android:id="@+id/progressbar_2"
+        <Spinner
+            android:visibility="@{mainviewmodel.mSpinnerVisiblity}"
+            android:layout_below="@id/progressbar_1"
+            android:id="@+id/spinner_companies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/progressbar_1" />
+            android:entries="@{mainviewmodel.mCompanies}"></Spinner>
     </RelativeLayout>
 
 </layout>
